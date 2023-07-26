@@ -1,15 +1,12 @@
-import { ContactForm } from './ContactForm/ContactForm';
-import { Filter } from './Filter/Filter';
-import { ContactList } from './ContactList/ContactList';
+// import { ContactForm } from './ContactForm/ContactForm';
+// import { Filter } from './Filter/Filter';
+// import { ContactList } from './ContactList/ContactList';
 import css from './App.module.css';
-import { useDispatch } from 'react-redux';
-import { lazy, useEffect } from 'react';
-import { fetchContacts } from 'redux/operations';
+// import { useDispatch } from 'react-redux';
+import { lazy } from 'react';
+// import { fetchContacts } from 'redux/operations';
 import { Routes, Route } from 'react-router-dom';
-import Home from 'pages/Home';
-import Login from 'pages/Login';
-import Register from 'pages/Register';
-import Contacts from 'pages/Contacts';
+
 import { Layout } from './Layout/Layout';
 import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
