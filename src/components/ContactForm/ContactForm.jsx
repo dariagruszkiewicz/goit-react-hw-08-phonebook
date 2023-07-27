@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import css from './ContactForm.module.css';
-import { addContact } from 'redux/operations';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { selectContacts } from 'redux/contacts/selectors';
 
 export const ContactForm = () => {
   const contacts = useSelector(selectContacts);
@@ -10,14 +10,16 @@ export const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    const contactItem = {
+      name: e.target.elements.text.value,
+      number: e.target.elements.tel.value,
+    };
 
-    const contact = e.target.elements.text.value;
-    const number = e.target.elements.tel.value;
-    const name = contacts.map(item => item.contact);
-    if (name.includes(contact)) {
-      alert(`${contact} is alredy in contacts.`);
+    const name = contacts.map(item => item.name);
+    if (name.includes(contactItem.name)) {
+      alert(`${contactItem.name} is alredy in contacts.`);
     } else {
-      dispatch(addContact({ contact, number }));
+      dispatch(addContact(contactItem));
     }
 
     e.target.reset();

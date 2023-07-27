@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import css from './ContactList.module.css';
-import { deleteContact } from 'redux/operations';
+import { deleteContact } from 'redux/contacts/operations';
 import {
   selectContacts,
   selectFilter,
   selectIsLoading,
   selectError,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -17,7 +17,7 @@ export const ContactList = () => {
 
   //Funkcja filtruje kontakty na podstawie przekazanej tablicy (contacts) i stringa (filter)
   const filteredContacts = contacts.filter(item =>
-    item.contact.toLowerCase().includes(filterValue.toLowerCase())
+    item.name.toLowerCase().includes(filterValue.toLowerCase())
   );
 
   return (
@@ -26,10 +26,10 @@ export const ContactList = () => {
       {error && <p>{error}</p>}
       {filteredContacts.map(item => (
         <li className={css.item_contact} key={item.id}>
-          {item.contact}: {item.number}
+          {item.name}: {item.number}
           <button
             type="button"
-            name={item.contact}
+            name={item.name}
             onClick={() => dispatch(deleteContact(item.id))}
           >
             Delete

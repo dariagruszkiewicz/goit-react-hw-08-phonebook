@@ -1,3 +1,5 @@
+import phonebook from '../images/phonebook.jpg';
+
 const styles = {
   container: {
     minHeight: 'calc(100vh - 50px)',
@@ -15,14 +17,9 @@ const styles = {
 const Home = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>
-        Task manager welcome page{' '}
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
-      </h1>
+      <h1 style={styles.title}>PHONEBOOK</h1>
+      <img width="500" src={phonebook} alt="Phonebook" />
     </div>
   );
 };
-
 export default Home;
