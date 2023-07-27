@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[839],{3037:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var c=n.p+"static/media/phonebook.fbcc6e32fd938be12871.jpg",o=n(184),r={},i=function(){return(0,o.jsxs)("div",{style:r.container,children:[(0,o.jsx)("h1",{style:r.title,children:"PHONEBOOK"}),(0,o.jsx)("img",{width:"500",src:c,alt:"Phonebook"}),(0,o.jsx)("p",{children:"All your contacts in one app"})]})}}}]);
+//# sourceMappingURL=839.b38d3c8c.chunk.js.map
