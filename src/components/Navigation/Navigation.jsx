@@ -9,8 +9,8 @@ export const Navigation = () => {
 
   return (
     <nav>
-      <img width="50" src={logo} />
-      <img width="50" src={phonebookLogo} />
+      <img width="50" src={logo} alt="logo" />
+      <img width="50" src={phonebookLogo} alt="phonebook-logo" />
       <NavLink className={css.link} to="/">
         Home
       </NavLink>
