@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[839],{3037:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var o=n.p+"static/media/phonebook.fbcc6e32fd938be12871.jpg",c=n(184),i={},r=function(){return(0,c.jsxs)("div",{style:i.container,children:[(0,c.jsx)("h1",{style:i.title,children:"PHONEBOOK"}),(0,c.jsx)("img",{width:"500",src:o,alt:"Phonebook"}),(0,c.jsx)("p",{children:"All your contacts in one app"})]})}}}]);
-//# sourceMappingURL=839.5460b895.chunk.js.map
