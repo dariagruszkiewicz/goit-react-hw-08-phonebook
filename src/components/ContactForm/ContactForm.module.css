@@ -1,10 +1,23 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
 .form {
   display: flex;
-  flex-direction: column;
-  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
   gap: 20px;
   padding: 20px;
+  background-color: rgb(197, 190, 186);
   border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 label {
@@ -14,12 +27,24 @@ label {
   flex-direction: column;
 }
 
-button {
+.addBtn {
   max-width: 90px;
   cursor: pointer;
   margin-left: 5px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: rgb(109, 103, 100);
+  padding: 5px;
+}
+
+.addBtn:hover,
+.addBtn:focus {
+  background-color: rgb(237, 83, 83);
 }
 
 input {
+  height: 30px;
   margin-top: 5px;
+  border-radius: 4px;
 }

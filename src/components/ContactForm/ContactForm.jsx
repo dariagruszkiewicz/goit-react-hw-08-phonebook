@@ -26,28 +26,32 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={css.form}>
-      <label>
-        Name
-        <input
-          type="text"
-          name="text"
-          pattern="^[A-Za-z.'\- ]+$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-          required
-        />
-      </label>
-      <label>
-        Number
-        <input
-          type="tel"
-          name="tel"
-          pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-          required
-        />
-      </label>
-      <button type="submit">Add contact</button>
-    </form>
+    <div className={css.wrapper}>
+      <form onSubmit={handleSubmit} className={css.form}>
+        <label>
+          <input
+            type="text"
+            name="text"
+            placeholder="Name"
+            pattern="^[A-Za-z.'\- ]+$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            required
+          />
+        </label>
+        <label>
+          <input
+            type="tel"
+            name="tel"
+            placeholder="Number"
+            pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
+            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            required
+          />
+        </label>
+        <button className={css.addBtn} type="submit">
+          Add contact
+        </button>
+      </form>
+    </div>
   );
 };

@@ -26,18 +26,19 @@ export const ContactList = () => {
   }, [dispatch]);
 
   return (
-    <ul>
+    <ul className={css.contactList}>
       {isLoading && !error && <p>Is loading...</p>}
       {error && <p>{error}</p>}
       {filteredContacts.map(item => (
         <li className={css.item_contact} key={item.id}>
           {item.name}: {item.number}
           <button
+            className={css.deleteBtn}
             type="button"
             name={item.name}
             onClick={() => dispatch(deleteContact(item.id))}
           >
-            Delete
+            x
           </button>
         </li>
       ))}

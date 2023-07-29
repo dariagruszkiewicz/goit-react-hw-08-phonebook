@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks/useAuth';
 import css from './Navigation.module.css';
 
-import phone from '../../images/phone.jpg';
+import oldPhone from '../../images/oldPhone.jpg';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
     <nav className={css.navigation}>
-      <img width="80" src={phone} alt="logo" />
+      <img width="40" src={oldPhone} alt="logo" />
       <NavLink className={css.link} to="/">
         Home
       </NavLink>

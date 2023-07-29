@@ -14,7 +14,24 @@
   margin-bottom: 16px;
 }
 
+input {
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
 .button {
-  background-color: rgb(234, 110, 110);
+  max-width: 90px;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 8px;
+  border: none;
   color: white;
+  background-color: rgb(109, 103, 100);
+  padding: 8px 13px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(237, 83, 83);
 }
